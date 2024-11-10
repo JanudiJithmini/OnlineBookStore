@@ -1,0 +1,57 @@
+/* Container for Vertical Navigation */
+.nav-bar {
+    width: 300px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar */
+    top: 0;
+    left: 0;
+    height: 100%; /* Full height */
+    background-color: #0b0909; /* Background color */
+    padding-top: 20px;
+  }
+  
+  /* Links inside the Vertical Navigation */
+  .nav-bar a {
+    padding: 10px 20px;
+    text-decoration: none; /* Remove underline */
+    font-size: 18px;
+    color: #fff; /* White text color */
+    display: block; /* Make links fill the container horizontally */
+  }
+  
+  /* Hover Effect */
+  .nav-bar a:hover {
+    background-color: #575757; /* Slightly lighter background */
+    color: #f1f1f1; /* Light text color */
+  }
+  
+  /* Active Link Styling */
+  .nav-bar a.active {
+    background-color: #04AA6D; /* Active link color */
+    color: white;
+  }
+  h1{
+    color: white;
+  }
+  .search-bar{
+    color: black;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  .search-bar input{
+    width: 50%;
+    height: 25px;
+  }
+   button{
+   
+    width: 20%;
+    height: 25px;
+    background-color: #0a25f3;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+    
+  }

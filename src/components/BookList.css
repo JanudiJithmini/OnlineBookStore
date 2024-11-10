@@ -1,0 +1,104 @@
+
+.booklist-container {
+  background-image: url('./assets/bookshelf.jpg'); /* Path to the background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center;
+  padding: 30px;
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+/* Adding overlay for better contrast */
+.booklist-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  z-index: -1;
+}
+  
+  .topic-heading {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #0d0c0c;
+    font-weight: bold;
+  }
+  
+  .book-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .book-box {
+    width: 250px;
+    padding: 20px 10px;
+    background-color: #190a7d;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(116, 130, 39, 0.1);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .book-box:hover {
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .book-box h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #f4f1f1;
+  }
+  
+  .book-box p {
+    margin: 5px 0;
+    color: #e8e40a;
+  }
+  .book-caterogory-container{
+    padding-left: 300px;
+    text-align: center; /* Center-align the heading */
+    color: #efe8e8;
+    background-color: #5e5d5f;
+    padding-top: 20px;
+    padding-bottom: 70px;
+  }
+  .book-category-heading{
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    color: #260796;
+    font-weight: bold;
+  }
+  .book-category-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .book-category-box{
+    width: 250px;
+    padding: 20px 10px;
+    background-color: #164860;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(116, 130, 39, 0.1);
+    transition: box-shadow 0.3s ease;
+    box-shadow: rgba(67, 141, 201, 0.4) 5px 5px, rgba(67, 84, 207, 0.3) 10px 10px, rgba(52, 60, 173, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+    cursor: pointer;
+  }
+  .book-category-box:hover{
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  .book-category-box h3{
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #f4f1f1;
+  }
+  
+  
